@@ -1,0 +1,175 @@
+
+/*Seccion de body */
+
+.columna{
+    display: flex;
+    gap: 30px; 
+    padding: 20px;
+    
+}
+
+#fondo{
+    flex: 3;
+    flex-direction: column;
+    background-image: url(/imagenes/carrera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    width: 500px;
+    height: 700px;
+}
+
+/*Seccion del aside*/
+aside{
+    flex: 1;
+    background-color: rgb(150, 148, 148);
+    align-items: center;
+    padding: 15px;
+    text-align:center;
+    flex-direction: column;
+    list-style-type: none;
+    margin-bottom: 15px;
+    width: 50px;
+    height: 670px;
+
+    
+
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    
+}
+
+.boton{
+    padding: 30px 60px;
+    font-size: 36px;
+}
+
+
+
+/*Seccion del footer*/
+footer{
+    background-image: url(/imagenes/linea_final.jpg);
+    height: 200px;
+    display: flex;
+    flex-direction:row;
+    
+}
+
+
+/*Seccion del tipo de letra*/
+
+h1{
+    color: white;
+    font-family: "Allerta Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+h2{
+    font-family: "Allerta Stencil", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+
+}
+
+h3{
+    color: white;
+    background-color: black;
+    font-family: "Allerta Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    flex-wrap: wrap;
+    padding: 10px;
+    height: 40%;
+}
+
+
+/*Formato de la sección de autos*/
+.autoelementos{
+    float:left;
+    line-height: 2;
+    padding: 60px;
+    font-size: 36px;
+
+}
+
+/*Formato para la sección de Escudería*/
+
+#escuderia{
+    line-height: 2;
+}
+
+#guardado{
+    float:right;
+    
+}
+
+/*Formato para la sección de Corredores*/
+#conductor{
+    display: flex;
+    gap: 20px; 
+    align-items: flex-start;
+    
+}
+
+.datoscorre {
+            display: flex;
+            flex-direction: column; 
+            gap: 5px; 
+        }
+
+.datoscorre label{
+
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.datoscorre input{
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+}
+
+#corredetalles{
+    display: flex;
+    flex-direction:row;
+    gap: 50px;
+    padding: 30px;
+}
+
+/*Formato para la pestaña de Relaciones*/
+
+fieldset{
+    border: #3e52a9 2px dotted;
+    padding: 20px;
+}
+
+.opciones{
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+    padding: 8px;
+}
+
+
+
+/*Lo que nos va a permitir cambiar los elementos en la pagina*/
+
+.seccion {
+            display: none; /*Oculta las pestañas por defecto*/
+            color: azure;
+        }
+
+.seccion.activa {
+            display: block; /*para mostrar la pestaña activa*/
+        }
