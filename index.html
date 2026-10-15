@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Vinculos-->
+    <link rel="stylesheet" href="estilo.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    
+    <title>Registro de Carreras</title>
+</head>
+
+<body>
+
+    <section class="columna">
+        <section id="fondo">
+            
+            <section id="inicio" class="seccion activa">
+                <h1>Completa el Registro para Participar</h1>
+            </section>
+            
+            <section id="autos" class="seccion">
+                <h1>Autos</h1>
+                <section class="autoelementos">
+                        <ul>
+                        <li><label>Nombre: </label>
+                        <input type="text" id="nombre" /></li>
+
+                        <li><label>Color Favorito:</label>
+                        <input type="color" id="colorf"/></li>
+
+                        <li><label>Foto:</label>
+                        <input type="file" id="imagen" /><br></li>
+
+                        <li><label> Activo:</label>
+                        <input type="radio" id="activo" name="activo" value="si"/>Si
+                        <input type="radio" id="activo" name="activo" value="no"/>No</li>
+                    </ul>
+
+                    <button id="guardado" >Guardar</button>
+                </section>
+                
+
+
+            </section>
+                
+
+            <section id="escuderia" class="seccion">
+                <h1>Escudería</h1>
+
+                <ul>
+                        <li><label>Nombre: </label>
+                        <input type="text" id="nombre" /></li>
+
+                        <li><label>Descripcion</label>
+                        <textarea cols="10" rows="10" id="Comentarios"></textarea></li>
+
+                </ul>
+
+                <button id="guardado" >Guardar</button>
+
+            </section>
+
+            <section id="corredor" class="seccion">
+                <h1>Corredor</h1>
+                <section id="conductor">
+
+                    <!-- Nombre -->
+                    <section class="datoscorre">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </section>
+
+                    <!--App-->
+                    <section class="datoscorre">
+                        <label for="app">App</label>
+                        <input type="text" id="app" name="app">
+                    </section>
+
+                    <!--Apm -->
+                    <section class="datoscorre">
+                        <label for="apm">Apm</label>
+                    <input type="text" id="apm" name="apm">
+                    </section>
+
+
+                </section>
+                
+                <section id="corredetalles">
+                    <label> Edad</label>
+                        <select id="Edad">
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="20">21</option>
+                            <option value="20">22</option>
+                            <option value="20">23</option>
+                            <option value="20">24</option>
+                            <option value="20">25</option>
+                            <option value="20">26</option>
+                            <option value="20">27</option>
+                            <option value="20">28</option>
+                            <option value="20">29</option>
+                            <option value="20">30</option>
+                            
+                        </select><br>
+                        <section id="genero" class="unic">
+                            <label> Género:</label>
+                            <input type="radio" id="generoU" name="generoU" value="Femenino"/>F
+                            <input type="radio" id="generoU" name="generoU" value="Masculino"/>M                         
+                        </section>
+                        
+                </section>
+
+                <label>Foto:</label>
+                    <input type="file" id="imagen" /><br>
+                
+                <button id="guardado" >Guardar</button>
+
+            
+            </section>
+
+
+            <section id="relaciones" class="seccion">
+                <h1>Relaciones</h1>
+
+                <fieldset>
+                    <legend>Auto-Corredor</legend>
+                        <section class="opciones">   
+                            <select id="autoR">
+                                <option value="a1">Auto 1</option>
+                                <option value="a2">Auto 2</option>
+                                <option value="a3">Auto 3</option>
+                            </select><br>
+                            <label>Auto</label>
+                        </section> 
+                        
+                        <section class="opciones">   
+                            <select id="corredorR">
+                                <option value="c1">Corredor 1</option>
+                                <option value="c2">Corredor 2</option>
+                                <option value="c3">Corredor 3</option>
+                            </select><br>
+                            <label>Auto</label>
+                        </section> 
+
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Auto-ESC</legend>
+
+                    <section class="opciones">   
+                        <select id="autoR2">
+                            <option value="a1.2">Auto 1</option>
+                            <option value="a2.3">Auto 2</option>
+                            <option value="a3.4">Auto 3</option>
+                        </select><br>
+                        <label>Auto</label>
+                    </section>
+                    
+                    <section class="opciones">   
+                        <select id="ESC">
+                            <option value="esc1">ESC 1</option>
+                            <option value="esc2">ESC 2</option>
+                            <option value="esc3">ESC 3</option>
+                        </select><br>
+                            <label>ESC</label>
+                    </section>
+
+                </fieldset>
+
+            </section>
+
+
+
+        
+        </section>
+
+
+    
+
+        <aside id="menu">
+            <h2>Menu</h2>
+
+            <ul>
+            <li><button id="boton1" class="boton" onclick="mostrarSeccion('autos')">Autos</button></li>
+            <li><button id="boton2" class="boton" onclick="mostrarSeccion('escuderia')">Escudería</button></li>
+            <li><button id="boton3" class="boton" onclick="mostrarSeccion('corredor')">Corredor</button></li>
+            <li><button id="boton4" class="boton" onclick="mostrarSeccion('relaciones')">Relaciones</button></li>
+            </ul>
+
+        </aside>
+    </section>
+
+
+    <footer>
+    <h3 id="minom">Paola Yaneli Torres Caraza</h3>
+    <h3 id="migru">LDSM 405</h3>
+    </footer>
+
+</body>
+<script src="app.js"></script>
+
+
+
+</html>
